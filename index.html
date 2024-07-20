@@ -2,27 +2,32 @@
 
 <html lang="en">
 
-    <script type="module" src="js/library/d3.v7.js"></script>
-    <script type="module" src="js/library/d3-annotation.js"></script>
-    <script type="module" src="js/library/topojson-client.js"></script>
-    <script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.js"></script>
+    <script src="js/library/topojson-client.js"></script>
+    <script type="module" src="js/employee.js"></script>
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Narrative Visualization</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-
-        <h1>This is a Narrative Visualization Project</h1>
-        <p>This is a Html Paragraph.</p>
-        <button onclick="onAButtonClick()">A Button</button>
-
-        <div id="div1">
-            <svg id="svg1"></svg>
+        <div class="container">
+            <h1 class="text_box">
+                This is the narrative visualization project for CS 416
+            </h1>
+            <ul class="text_box">
+                <li class="text_list_item">
+                    Student Initial: YW
+                </li>
+            </ul>
+            <div class="container_button" style="margin-top: 50px;">
+                <a href="scene1.html"><button class="page_button">Start</button></a>
+            </div>
         </div>
-
     </body>
 
 </html>
