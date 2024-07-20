@@ -19,10 +19,17 @@ const colors = {
     "selected": "#9be89b"
 }
 
-const data = await d3.dsv(",", "../data/h1b_cap_2.csv");
-console.log(data);
+async function getData() {
+    const data = await d3.dsv(",", "../data/h1b_cap_2.csv");
+    return data;
+}
 
-const x_scale = d3.scaleLinear()
+
+async function genChart(){
+    const data = await getData();
+
+
+    const x_scale = d3.scaleLinear()
     .domain([2021, 2025])
     .range([padding, width - padding * 2]);
 
@@ -546,3 +553,8 @@ function get_selected_percentage(d) {
 // End of helper functions
 
 
+
+}
+
+
+genChart();
