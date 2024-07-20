@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.js"></script>
+    <script src="js/library/topojson-client.js"></script>
+    <script type="module" src="js/scene2.js"></script>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>H1-B Lottery</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text_box">
+                Potential Fraud and Abuse in H1-B Electronic Registrations
+            </h1>
+            <ul class="text_box">
+                <li class="text_list_item">
+                    H1-B electronic registration began in FY 2021. The selection rate are falling over the years, as the registrations are increasing, while the selected quota remains 85,000 a year.
+                </li>
+                <li class="text_list_item">
+                    Some applicants are allowed to submit multiple registrations, provided they have multiple employers willing to sponsor them and offer a position.
+                </li>
+                <li class="text_list_item">
+                    In this undefined area, various companies focus solely on sponsoring applicants without offering a position or running a legitimate business. Applicants pay these companies to increase their chances of winning the lottery.
+                </li>
+                <li class="text_list_item">
+                    Finally, in FY 2025, <a href="https://www.uscis.gov/newsroom/news-releases/uscis-announces-strengthened-integrity-measures-for-h-1b-program">USCIS announced</a> that the lottery would follow a "one human, one ticket" rule, regardless of the number of employers submitting applications for the same employee.
+                </li>
+                <li class="text_list_item"><strong>
+                    Hoover around bars to see details!
+                </strong></li>
+            </ul>
+            <svg id="electronic_svg"></svg>
+            <strong class="text_box">
+                H1-B Electronic Registration FY2021 and after
+            </strong>
+            <div class="container_button">
+                <a href="scene1.html"><button class="page_button">Prev</button></a>
+                <a href="company_home.html"><button class="page_button">Next</button></a>
+            </div>
+            <p class="text_box">All data source from <a href="https://www.dol.gov/agencies/eta/foreign-labor/performance">USCIS</a></p>
+        </div>
+    </body>
+
+</html>

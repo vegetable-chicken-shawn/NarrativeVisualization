@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.js"></script>
+    <script src="js/library/topojson-client.js"></script>
+    <script type="module" src="js/company_home.js"></script>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>H1-B Employees</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text_box">
+                Who is hiring foreign workers?
+            </h1>
+            <ul class="text_box">
+                <li class="text_list_item">
+                    Approximately 87% of companies in the U.S. hire foreign workers. There are hundreds of thousands of workers holding H1-B visas.
+                </li>
+                <li class="text_list_item"><strong>
+                    Select a year and hover over the bubbles to see companies that hire foreign workers, and click on them for more details.
+                </strong></li>
+            </ul>
+            <div>
+                <button class="page_button" id="button_2021">2021</button>
+                <button class="page_button" id="button_2022">2022</button>
+                <button class="page_button" id="button_2023">2023</button>
+            </div>
+            <svg id="company_svg"></svg>
+            <div class="text_box" id="description_text" style="margin-top: 50px;"></div>
+            <div class="container_button">
+                <a href="scene2.html"><button class="page_button">Prev</button></a>
+                <a href="employee.html"><button class="page_button">Next</button></a>
+            </div>
+            <p class="text_box">All data source from <a href="https://www.dol.gov/agencies/eta/foreign-labor/performance">USCIS</a></p>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.js"></script>
+    <script src="js/library/topojson-client.js"></script>
+    <script type="module" src="js/employee.js"></script>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>H1-B Employees</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text_box">
+                Where are the workers coming from?
+            </h1>
+            <ul class="text_box">
+                <li class="text_list_item">
+                    Checkout the map to see where are the H1-B petitioners coming from for FY 2023.
+                </li>
+                <li class="text_list_item"><strong>
+                    Hoover on country dots to see the education distributions!
+                </strong></li>
+            </ul>
+            <svg id="employee_svg"></svg>
+            <div class="container_button" style="margin-top: 50px;">
+                <a href="company_home.html"><button class="page_button">Prev</button></a>
+                <a href="scene1.html"><button class="page_button">Back to Start</button></a>
+            </div>
+            <p class="text_box">All data source from <a href="https://www.dol.gov/agencies/eta/foreign-labor/performance">USCIS</a></p>
+        </div>
+    </body>
+
+</html>

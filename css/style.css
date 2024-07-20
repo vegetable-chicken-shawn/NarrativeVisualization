@@ -1,0 +1,94 @@
+
+
+body {
+    font-family: Verdana;
+}
+
+
+.tooltip {
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 12px;
+    background: lightsteelblue;
+    border: 1px;
+    border-radius: 8px;
+    border-color: grey;
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+.annotation_group{
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    font-size: 12px;
+    background: lightsteelblue;
+    border: 1px;
+    border-radius: 8px;
+    border-color: grey;
+    pointer-events: none;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 100vw;
+    min-width: 1000px;
+}
+
+
+.container_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    width: 100vw;
+    min-width: 1000px;
+}
+
+
+.text_box {
+    padding: 5px;
+    margin: 15px;
+    min-width: 800px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+
+.text_list_item {
+    padding: 5px;
+    margin: 5px;
+    min-width: 800px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+
+.page_button {
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: Verdana;
+}
+
+
+.topo_country {
+    fill: #cccccc;
+    stroke: #eeeeee;
+}
+
+
+
+
