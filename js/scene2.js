@@ -427,8 +427,8 @@ const annotations = [{
         "H1B Fiscal Year": 2025,
         "Total Registrations": data[4]["Total Registrations"]
     },
-    dy: -60,
-    dx: -60,
+    dy: -20,
+    dx: -20,
 }
 ]
 
