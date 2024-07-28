@@ -68,7 +68,7 @@ async function genChart() {
             return color(d["H1B Applications Received"]);
         });
 
-    content.transition()
+    content.transition("start_transition")
         .duration(intro_duration)
         .attr("height", (d, i) => {
             return height_scale(d["H1B Applications Received"]);

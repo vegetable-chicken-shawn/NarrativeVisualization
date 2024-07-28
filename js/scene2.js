@@ -78,7 +78,7 @@ content_single
         return colors["single"];
     });
 
-content_single.transition()
+content_single.transition("start_transition")
     .duration(intro_duration)
     .attr("height", (d, i) => {
         return height_scale(d["Eligible Registrations for Beneficiaries with No Other Eligible Registrations"]);
@@ -106,7 +106,7 @@ content_multi
         return colors["multi"];
     });
 
-content_multi.transition()
+content_multi.transition("start_transition")
     .duration(intro_duration)
     .attr("height", (d, i) => {
         return height_scale(d["Eligible Registrations for Beneficiaries with Multiple Eligible Registrations"]);
@@ -134,7 +134,7 @@ content_error
         return colors["error"];
     });
 
-content_error.transition()
+content_error.transition("start_transition")
     .duration(intro_duration)
     .attr("height", (d, i) => {
         return height_scale(d["Total Registrations"] - d["Eligible Registrations"]);
@@ -162,7 +162,7 @@ content_selected
         return colors["selected"];
     });
 
-content_selected.transition()
+content_selected.transition("start_transition")
     .duration(intro_duration)
     .attr("height", (d, i) => {
         return height_scale(d["Selected Registrations"]);
